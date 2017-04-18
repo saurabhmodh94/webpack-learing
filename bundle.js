@@ -70,13 +70,30 @@
 /* 0 */
 /***/ (function(module, exports) {
 
-module.exports = "Hello Everyone!"
+// function getWelcomeMessage(){
+//     return "Hello World"
+// }
+
+let people = [
+    {
+        "name":"Saurabh",
+        "email":"saurabh@user.com"
+    },
+    {
+        "name":"Shubham",
+        "email":"shubham@user.com"
+        
+    }
+    ]
+module.exports = people
 
 /***/ }),
 /* 1 */
 /***/ (function(module, exports, __webpack_require__) {
 
-alert(__webpack_require__(0));
+let people = __webpack_require__(0);
+
+console.log(people);
 
 /***/ })
 /******/ ]);
